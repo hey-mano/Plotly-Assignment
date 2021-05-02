@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1619982265882.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3207090204",
+    "id" : "FD306908",
+    "lastKnownWriteTime" : 1619982331,
+    "last_content_update" : 1619982331839,
+    "path" : "~/GitHub/Plotly Assignment/Plotly Assignment/Plotly Assignment.Rmd",
+    "project_path" : "Plotly Assignment.Rmd",
+    "properties" : {
+        "cursorPosition" : "7,69",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

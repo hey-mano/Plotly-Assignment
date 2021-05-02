@@ -1,0 +1,75 @@
+---
+title: "Week 3 Assignment"
+author: "Manoli Heyneke"
+knit: (function(input_file, encoding) {
+  out_dir <- 'docs';
+  rmarkdown::render(input_file,
+ encoding=encoding,
+ output_file=file.path(dirname(input_file), out_dir, 'index.html'))})
+date: "02/05/2021"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(palmerpenguins)
+library(tidyverse)
+library(plotly)
+```
+
+## Palmerpenguins Point Plot
+```{r}
+penguins%>%
+        ggplot(aes(bill_length_mm,body_mass_g,col=species))+
+        geom_point()+
+        ggthemes::scale_color_colorblind()+
+        theme_minimal()+
+        labs(x="Bill Length (mm)",y="Body Mass (g)",col="Species")->p
+
+ggplotly(p)
+        
+```
+
+
+## Palmerpenguins Box Plot
+```{r,warning=FALSE}
+penguins%>%
+        ggplot(aes(species,body_mass_g,fill=species))+
+        geom_boxplot()+
+        ggthemes::scale_fill_colorblind()+
+        theme_minimal()+
+        labs(x="Species",y="Body Mass (g)",fill="species")->p
+
+ggplotly(p)
+        
+```
+
+## Thanks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
